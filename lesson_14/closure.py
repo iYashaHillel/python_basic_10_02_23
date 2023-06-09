@@ -8,8 +8,7 @@
 def outer_func(name):
     print('outer_func')
 
-    def greetings(lang: str = 'ua'):
-        print(lang)
+    def greetings():
         print(f'Hello {name}')
 
     return greetings
@@ -18,12 +17,7 @@ def outer_func(name):
 hello_john = outer_func('John')
 hello_bob = outer_func('Bob')
 print('-------')
-hello_john('en')
-hello_john('de')
-hello_john('ua')
 hello_john()
-hello_bob()
-hello_bob()
 hello_bob()
 hello_bob()
 hello_bob()
